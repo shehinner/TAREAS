@@ -13,14 +13,22 @@ import java.util.Scanner;
  */
 public class Laszlo {
     public static void main(String[] args) {
-        System.out.println("20$eG,pjFf20");
+        
+        
+      
         // determinar si un numero si tiene tres digitos
         Scanner entrada = new Scanner(System.in);
+        
+        System.out.println("digite un numero de 3 cifras");
+        
         int numero = entrada.nextInt();
+        
+        
         if(numero<1000 & numero>99 ){
             System.out.println("tiene tres digitos");
         }else{
             System.out.println("no tiene tres digitos");
         }
+         
     }
 }
