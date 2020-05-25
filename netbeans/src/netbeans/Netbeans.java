@@ -15,7 +15,11 @@ public class Netbeans {
 
 
     public static void main(String[] args) {
-        
+        /*4.  Leer un número entero de dos dígitos y determinar 
+        a cuánto es igual la suma de sus dígitos. */
+        /*Leer un número entero de dos dígitos
+                y determinar si ambos dígitos son pares.*/
+        //Leer dos números enteros y determinar cuál es el mayor. 
     }
        
     
