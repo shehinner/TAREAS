@@ -5,17 +5,19 @@
  */
 package netbeans;
 
+import java.util.Scanner;
+
 /**
  *
  * @author EL LOL
  */
 public class Netbeans {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
-        System.out.println("20$eG,pjFf20");
+        
     }
+       
+    
     
 }
