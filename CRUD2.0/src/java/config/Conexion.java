@@ -14,21 +14,16 @@ import javax.swing.JOptionPane;
  */
 public class Conexion {
 
-    static Connection cnx = null;
-    
-   // public static void main(String[] args) {
-        //shehinner gay
-    
-    public static Connection conectar() {
-        
+    Connection con;
+    public Conexion(){
         try {
             Class.forName("com.mysql.jdbc.Driver");
-            cnx = DriverManager.getConnection("jdbc:Mysql://localhost/taller2?user=root&password=");
-            //JOptionPane.showMessageDialog(null, "Conectado");
-
+            con = DriverManager.getConnection("jdbc:Mysql://localhost/taller2?user=root&password=");            
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "error al conectar");
+            System.err.println("Error"+e);
         }
-        return cnx;
+    }
+    public Connection getConnection(){
+        return con;
     }
             }
