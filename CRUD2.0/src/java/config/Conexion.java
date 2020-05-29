@@ -17,7 +17,7 @@ public class Conexion {
     static Connection cnx = null;
     
    // public static void main(String[] args) {
-        
+        //shehinner gay
     
     public static Connection conectar() {
         
