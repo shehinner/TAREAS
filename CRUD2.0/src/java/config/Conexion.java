@@ -5,9 +5,8 @@
  */
 package config;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -15,18 +14,21 @@ import java.sql.SQLException;
  */
 public class Conexion {
 
-    Connection con;
-
-    public Conexion() {
+    static Connection cnx = null;
+    
+   // public static void main(String[] args) {
+        
+    
+    public static Connection conectar() {
+        
         try {
-                Class.forName("com.mysql.jdbc.Driver");
-                con = DriverManager.getConnection("jdbc:mysql://localhost:3306/taller2");
-            } catch (ClassNotFoundException | SQLException e) {
-                    System.err.println("Error:" + e);
-                                }   
-                    }
+            Class.forName("com.mysql.jdbc.Driver");
+            cnx = DriverManager.getConnection("jdbc:Mysql://localhost/taller2?user=root&password=");
+            //JOptionPane.showMessageDialog(null, "Conectado");
 
-                    public Connection getConnection() {
-                        return con;
-                    }
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "error al conectar");
+        }
+        return cnx;
+    }
             }
